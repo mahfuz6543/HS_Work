@@ -1,0 +1,76 @@
+@charset "UTF-8";
+/* CSS Document */
+
+h1 {
+	font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif";
+	font-size: 5em;
+	font-weight: bold;
+	text-shadow: 3px 3px 5px #333;
+	text-decoration: none;
+	color: #FF5E49;
+}
+div {
+  background-color: lightgrey;
+  border: 15px solid #B3FFD2;
+  padding: 50px;
+  margin: 20px;
+}
+div2 {
+  background-color: lightgrey;
+  border: 15px solid #B3FFD2;
+  padding: 50px;
+  margin: 20px;
+}
+.voiceinator {
+  padding: 2rem;
+  width: 50rem;
+  margin: 0 auto;
+  border-radius: 1rem;
+  position: relative;
+  background: white;
+  overflow: hidden;
+  z-index: 1;
+  box-shadow: 0 0 5px 5px rgba(0,0,0,0.1);
+}
+.voiceinator input,
+.voiceinator button,
+.voiceinator select,
+.voiceinator textarea {
+  width: 100%;
+  display: block;
+  margin: 10px 0;
+  padding: 10px;
+  border: 0;
+  font-size: 2rem;
+  background: #F7F7F7;
+  outline: 0;
+}
+
+textarea {
+  height: 20rem;
+}
+
+input[type="select"] {
+
+}
+
+.voiceinator button {
+  background: #ffc600;
+  border: 0;
+  width: 49%;
+  float: left;
+  font-family: 'Pacifico', cursive;
+  margin-bottom: 0;
+  font-size: 2rem;
+  border-bottom: 5px solid #F3C010;
+  cursor: pointer;
+  position: relative;
+}
+
+.voiceinator button:active {
+  top: 2px;
+}
+
+.voiceinator button:nth-of-type(1) {
+  margin-right: 2%;
+}

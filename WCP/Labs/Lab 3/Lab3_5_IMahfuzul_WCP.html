@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Lab 2: Exercise 5</title>
+    <meta charset="utf-8">
+    <script
+      src="https://code.jquery.com/jquery-3.1.1.js"
+      integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
+      crossorigin="anonymous"></script>
+    <link rel="stylesheet" href=
+      "https://cdnjs.cloudflare.com/ajax/libs/tufte-css/1.1/tufte.css">
+    <link rel="stylesheet" href=
+      "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      
+    <link rel="stylesheet" href=
+      "http://cdn.css.net/files/jquery.tooltipster/4.1.8/css/tooltipster.core.min.css">
+     
+    <link rel="stylesheet" href=
+      "http://cdn.css.net/files/jquery.tooltipster/4.1.8/css/tooltipster.bundle.min.css">
+      
+    <link rel="stylesheet" href=
+      "http://cdn.css.net/files/jquery.tooltipster/4.1.8/css/plugins/tooltipster/sideTip/themes/tooltipster-sideTip-noir.min.css">
+    
+    <script
+      src="http://cdn.css.net/files/jquery.tooltipster/4.1.8/js/tooltipster.core.min.js"></script>
+      
+     <script
+      src="http://cdn.css.net/files/jquery.tooltipster/4.1.8/js/tooltipster.bundle.min.js"></script>
+      
+     
+      
+    <style>
+      body { margin: 20px; }
+      
+      .markup-quote { 
+      	cursor: pointer;
+      	background-color: yellow;
+      }
+      
+      img {
+        width: auto;
+      }
+      
+      a {
+      	cursor: pointer;
+      }
+      .tooltip_templates { display: none; }
+      
+    </style>
+
+    <script>
+    $(document).ready(function() {
+
+      $('.tooltipster').tooltipster();
+	
+		$('.tooltipster2').tooltipster({
+			theme: 'tooltipster-noir'
+		});
+		
+		$('.tooltipster3').tooltipster({
+			theme: 'tooltipster-noir',
+			interactive: true,
+		});
+
+    });
+    </script>
+  </head>
+
+  <body>
+
+	<img class="img-circle tooltipster3" width="160" height="179" data-tooltip-content="#tooltip_content" src="me2.jpg">
+	
+
+	<div class="tooltip_templates">
+	    <span id="tooltip_content">
+	        <strong>Rob Miller</strong><BR>
+	        	MIT CSAIL Professor.<BR>
+	        	<button class="btn btn-xs">Follow</button><BR>
+	        		12 followers<BR>
+	        		100 followees
+	    </span>
+	</div>
+	
+	<div class="tooltip_templates">
+	    <span id="tooltip_content2">
+	        <button class="btn btn-xs">Tweet This</button> <button class="btn btn-xs">Highlight This</button>
+	    </span>
+	</div>
+	
+    <h2>Blog Post #1</h2>
+    
+    <P>
+    	I am Mahfuzul Islam, from the Web Design Academy. I goes to Information Technology High School. Now I am a senior, which is really something to be proud of. The reason I am in this web design academy is mainly because I want learn about computer science, which I'm also planning to take in college. Computer science has the position mostly everywhere in the world and the job opportunity is growing very rapidly. For me personally, programming is fun when I finally solve any problems, but when I get stuck I don't feel like to continue anymore.
+
+
+
+In my free time I usually love to play video games and play soccer in the field.  My dream was to become an aeronautical engineering but it seems I wont be able to fulfill it but I would love to work for any aircraft company.
+    </P>
+    
+    
+    <P>
+    	Now, here's a link to <a href="http://iamceege.github.io/tooltipster/">Tooltipster</a>.
+    	Go through the "Getting Started" guide, play with the demos, and think about how you want to style different types of tooltips.
+    	Tooltipster has a lot of flexibility around this, including 5 provided themes, many variables, and ability to write custom
+    	HTML inside the tooltip.
+    </P>
+
+	<P>
+    	Thanks for reading!
+    </P>
+    
+	<P>
+		Share via: 
+		<img width="30" height="30" class="tooltipster" title="Twitter" src="https://abs.twimg.com/icons/apple-touch-icon-192x192.png">
+		<img width="20" height="20" class="tooltipster" title="Facebook" src="https://www.facebook.com/images/fb_icon_325x325.png">
+	</P>
+
+  </body>
+</html>

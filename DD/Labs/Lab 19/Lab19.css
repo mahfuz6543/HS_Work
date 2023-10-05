@@ -1,0 +1,98 @@
+@charset "utf-8";
+/* CSS Document */
+body {
+  font-family: "Lato", sans-serif;
+}
+.topnav {
+    overflow: hidden;
+    background-color: rgb(40,40,40);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    width: 100vw;
+    border-bottom: 4px solid #7fffd4;
+}
+.topnav a {
+    float: left;
+    color: #7fffd4;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    transition: all ease-in-out 200ms;
+}
+.topnav a:hover {
+    background-color: #eee;
+    color: black;
+}
+.topnav a.active {
+    background-color: #eee;
+    color: white;
+}
+.sidenav {
+  height: 100%;
+  width: 160px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.sidenav a {
+  padding: 36px 8px 10px 25px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #7fffd4;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.main {
+  margin-left: 160px; /* Same as the width of the sidenav */
+  font-size: 28px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+h1 {
+	font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif";
+	font-size: 3em;
+	font-weight: bold;
+	text-shadow: 3px 3px 5px #333;
+	text-decoration: none;
+	color: #DD292C
+}
+h2 {
+	font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif";
+	font-size: 2em;
+	font-weight: bold;
+	text-shadow: 3px  #333;
+	text-decoration: none;
+	text-emphasis-color: 
+}
+h2 {
+	font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif";
+	font-size: 2em;
+	font-weight: bold;
+	text-shadow: 3px  #333;
+	text-decoration: none;
+	text-emphasis-color: 
+}
+p {
+	font-family:Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif"
+	font-size: 2em;
+	font-weight: 200
+	text-shadow: 3px  #333;
+	text-decoration: none;
+	text-emphasis-color: 
+}

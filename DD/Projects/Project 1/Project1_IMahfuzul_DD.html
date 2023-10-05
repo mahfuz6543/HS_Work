@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+	<head>
+		<center>
+	<a href="../../DDindex.html"><img src="../../images/Nameplate.jpg" alt="Nameplate" border="5">
+		</center>
+		<link href='style.css'rel='stylesheet'>
+		<ul>
+		<li><a href="Project1_IMahfuzul_DD.html">Home</a></li>
+		<li><a href="sources.html">Credits</a></li>	
+		</ul>
+		
+		
+	</head>
+<body>
+	
+	<center><hr width="25%" ></center>	
+	<center>
+	<table style="width: 70%" border="3px">
+		<tr bgcolor="#FFFFFF">
+			<th><a href="HacksawRidge.html">Hacksaw Ridge</a></th>
+			<th><a href="Dunkirk.html">Dunkirk</a></th>
+			<th><a href="The_Shawshank_Redemption.html">The Shawshank Redemption</a></th>
+		</tr>	
+	</table>
+	</center>
+	<hr width="50%" >
+	
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+	<a href="HacksawRidge.html"><img src="../../images/Hacksaw Ridge3.jpg" alt="Hacksaw Ridge" width="400" height="500">
+  <div>Hacksaw Ridge</div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <a href="Dunkirk.html"><img src="../../images/Dunkirk1.jpg" alt="Dunkirk" width="400" height="500">
+  <div>Dunkirk</div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+	<a href="The_Shawshank_Redemption.html"><img src="../../images/Shawshank1.jpg" alt="Shawshank Redemption" width="400" height="500">
+  <div>Shawshank Redemption</div>
+</div>
+
+<div style="text-align:">
+  <span class="dot" ></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+	
+	<hr width="25%" >
+	<center>
+	<a href="../../DDindex.html"></a><img src="../../images/Nameplate.jpg" alt="Nameplate" border="5">
+		</center>
+			<hr width="50%" >
+		<!--Footer-->
+	<footer>
+		<div id="copyright">
+			<h4>Creator of this website: Mahfuzul Islam
+				<br>Web Design Academy<br>10/15/18<br>Information Technology High School</h4>
+		</div>
+	</footer>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 2000); // Change image every 4 seconds
+}
+</script>
+
+</body>
+</html>

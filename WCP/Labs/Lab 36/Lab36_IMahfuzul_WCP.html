@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="Lab36.css">
+<link rel="icon" href="../../../images/mylogo.png" type="image/png" sizes="16x16">
+<title>Lab 36</title>
+</head>
+
+<body>
+<blockquote>
+  <h1>Lab #36</h1>
+  <h1>Speech Synthesis</h1>
+</blockquote>
+
+<div class="voiceinator">
+<center>
+<h1>The Voiceinator 5000</h1>
+
+      <select name="voice" id="voices">
+        <option value="">Select A Voice</option>
+      </select>
+
+      <label for="rate">Rate:</label>
+      <input name="rate" type="range" min="0" max="3" value="1" step="0.1">
+
+      <label for="pitch">Pitch:</label>
+
+      <input name="pitch" type="range" min="0" max="2" step="0.1">
+      <textarea name="text">No one loves me and neither do i 👍</textarea>
+      <button id="stop">Stop!</button>
+      <button id="speak">Speak</button>
+
+</center>
+</div>
+</body>
+<script src="Lab36.js"></script>
+</html>

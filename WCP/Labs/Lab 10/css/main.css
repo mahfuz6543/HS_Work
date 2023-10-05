@@ -1,0 +1,260 @@
+body {
+	background: #000 url(../img/bg-body.jpg) repeat-x center top;
+	color: #eee;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	margin: 0;
+}
+img {
+	border: 0;
+	vertical-align: bottom;
+}
+#wrapper {
+	background: url(../img/bg-wrapper.png) repeat-y center top;
+}
+#header {
+	height: 225px;
+	width: 758px;
+	background: url(../img/bg-header.jpg) no-repeat;
+	position: relative;
+	border: 0 1px solid #111;
+	margin: auto;
+}
+#logo {
+	position: absolute;
+	background: url(../img/jf-logo.png);
+	height: 225px;
+	width: 263px;
+	text-indent: -9000px;
+	left: -43px;
+	top: 1px;
+}
+#headerDetails {
+	position: absolute;
+	bottom: 27px;
+	right: 12px;
+	height: 16px;
+	width: 523px;
+	background-image: url(../img/header-address-hours.png);
+	text-indent: -9000px;
+}
+#contentWrapper {
+	width: 742px;
+	position: relative;
+	border: 0 1px solid #111;
+	background: #333;
+	margin: auto;
+	padding-right: 8px;
+	padding-bottom: 10px;
+	padding-left: 8px;
+	overflow: hidden;
+}
+#contentWrapper p {
+	line-height: 18px;
+}
+#contentMenu {
+	margin: 0px;
+	list-style: none;
+	width: 700px;
+	height: 35px;
+	padding-top: 20px;
+	padding-bottom: 11px;
+	padding-left: 12px;
+}
+#contentMenu li {
+	float: left;
+}
+#content {
+	float: left;
+	width: 530px;
+	position: relative;
+	margin-top: -12px;
+	padding-right: 9px;
+}
+#content h3 {
+	font-size: 20px;
+	font-weight: bold;
+	color: #FFF;
+	margin: 5px 0px;
+	clear: both;
+}
+#contentPanel {
+	clear: both;
+}
+#contentPanel p {
+	padding: 0 20px 0 2px;
+}
+#featuredShows {
+	width: 530px;
+	border: 1px solid #111;
+}
+#contentPanel #gallery {
+	margin-top: -11px;
+	margin-right: 25px;
+	margin-left: 25px;
+	text-align: center;
+	position: relative;
+	width: 483px;
+}
+#contentPanel #gallery a {
+	margin: 9px;
+	float: left;
+	border: 1px solid #000;
+	outline: 0 solid #ffcf60;
+}
+.subColumn, .subColumnUno, .subColumnText {
+	background-color: #222;
+	border: 1px solid #111;
+	display: inline;
+	float: left;
+	height: 260px;
+	overflow: hidden;
+	width: 259px;
+	margin-right: 9px;
+	margin-top: 9px;
+}
+#subContent1 {
+	clear: both;
+}
+#subContent2, .textSlider{
+	z-index: 100;
+	background: url(../img/bg-slider.jpg) no-repeat center center;
+	height: 260px;
+	width: 260px;
+}
+#subContent2 p {
+	padding: 0 10px;
+	margin-top: 4px;
+}
+#subContent2 h3 {
+	text-indent: -9000px;
+	height: 35px;
+	background: url(../img/ad-sliderheader.jpg);
+	margin: 0 auto;
+}
+#subContent2 .textSlider #theJive {
+	background-position: center -1px;
+}
+#subContent2 .textSlider #philosophy {
+	background-position: center -41px;
+}
+#subContent3 {
+	width: 198px;
+	margin-right: 0px;
+}
+#footer {
+	clear: both;
+	width: 738px;
+	border-bottom: 0 solid #111;
+	background: #1d1d1d url(../img/bg-footer.jpg) no-repeat top center;
+	color: #999;
+	padding: 10px;
+	text-align: center;
+	height: 150px;
+	margin: auto;
+	border: 1px solid #111;
+	border-bottom: 0;
+}
+#contentMenu li a {
+	text-indent: -9000px;
+	display: block;
+	height: 23px;
+	background: url(../img/content-menu-text.png) no-repeat;
+	margin-right: 10px;
+}
+#contentMenu li a:hover, #contentMenu li a:focus {
+	outline: none;
+}
+#contentMenu li #happening {
+	width: 190px;
+	background-position: 0 -46px;
+}
+#contentMenu li #happening:hover, #contentMenu li #happening:focus {
+	background-position: 0 -23px;
+}
+#contentMenu li #happening.activeContent {
+	background-position: 0 0px;
+}
+#contentMenu li #menu {
+	width: 193px;
+	background-position: -190px -46px;
+}
+#contentMenu li #menu:hover, #contentMenu li #menu:focus {
+	background-position: -190px -23px;
+}
+#contentMenu li #menu.activeContent {
+	background-position: -190px 0px;
+}
+#contentMenu li #directions {
+	width: 102px;
+	background-position: -383px -46px;
+}
+#contentMenu li #directions:hover, #contentMenu li #directions:focus {
+	background-position: -383px -23px;
+}
+#contentMenu li #directions.activeContent {
+	background-position: -383px 0px;
+}
+#accordionNav {
+	float: right;
+	width: 199px;
+	background-color: #333;
+	border: 1px solid #111;
+	margin-top: -57px;
+}
+#accordionNav h3 {
+	font-size: 14px;
+	margin: 0;
+}
+#accordionNav img {
+	padding-bottom: 8px;
+}
+#accordionNav a {
+	color: #eee;
+	text-decoration: none;
+	display: block;
+	padding-top: 5px;
+	padding-right: 8px;
+	padding-bottom: 5px;
+	padding-left: 8px;
+	outline: none;
+}
+#accordionNav a:hover {
+	color: #ffcf60;
+}
+.accordion {
+	overflow: hidden;
+	outline: none;
+}
+.accordionPanel {
+	margin: 0;
+	padding: 0;
+}
+.accordionPanelTab {
+	background-color: #555;
+	background-image: url('../img/stripes.png');
+	margin: 0;
+	cursor: pointer;
+	-webkit-user-select: none; 
+	-moz-user-select: none; 
+	-ms-user-select: none; 
+	color: #fff;
+	height: 35px;
+	line-height: 35px;
+	font-size: 18px;
+	text-align: center;
+}
+.accordionPanelTab:hover {
+	color: gold;
+}
+.accordionPanelContent {
+	overflow: hidden;
+	margin: 0px;
+	padding: 0px;
+	height: 315px;
+	background: url(../img/bg-accordion.jpg);
+}
+.highlight {
+	color: gold;
+	background-color: #999;
+}

@@ -1,0 +1,53 @@
+@charset "UTF-8";
+/* CSS Document */
+
+h1 {
+	font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif";
+	font-size: 5em;
+	font-weight: bold;
+	text-shadow: 3px 3px 5px #333;
+	text-decoration: none;
+	color: #FF5E49;
+}
+div {
+  background-color: lightgrey;
+  border: 15px solid #B3FFD2;
+  padding: 50px;
+  margin: 20px;
+}
+div2 {
+  background-color: lightgrey;
+  border: 15px solid #B3FFD2;
+  padding: 50px;
+  margin: 20px;
+}
+.site-wrap {
+      max-width: 700px;
+      margin: 100px auto;
+      background: white;
+      padding: 40px;
+      text-align: justify;
+    }
+    .align-left {
+      float: left;
+      margin-right: 20px;
+    }
+    .align-right {
+      float: right;
+      margin-left: 20px;
+    }
+    .slide-in {
+      opacity: 0;
+      transition: all .5s;
+    }
+    .align-left.slide-in {
+      transform: translateX(-30%) scale(0.95);
+    }
+    
+    .align-right.slide-in {
+      transform: translateX(30%) scale(0.95);
+    }
+    .slide-in.active {
+      opacity: 1;
+      transform: translateX(0%) scale(1);
+    }

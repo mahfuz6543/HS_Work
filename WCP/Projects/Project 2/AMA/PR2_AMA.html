@@ -1,0 +1,85 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>AMA | Shark Tank Project</title>
+<link rel="stylesheet" type="text/css" href="PR2_AMA_Homepage.css">
+<link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans|Oswald|Raleway|Roboto+Slab&display=swap" rel="stylesheet">
+<link rel="icon" href="../../../images/AMA_Logo_3.jpg" type="image/png" sizes="16x16">	
+</head>
+<body>
+<!-- Navigation Bar -->
+<div id="right">
+
+	<ul>
+		<li><a href="PR2_AMA_Contacts.html">Contact Us</a></li>
+		<li><a href="PR2_AMA_Prodcucts.html">Our Solution</a></li>
+		<li><a href="PR2_AMA_Purpose.html">Purpose</a></li>
+		<li><a href="PR2_AMA.html">Home</a></li>
+	</ul>
+<!-- Right Text -->
+<h2>We have found a way to recycle CO2</h2>
+<!-- Slideshow -->
+<div class="slideshow-container">
+<div class="mySlides fade">
+
+<img alt="" src="PR2_Images/ishan-seefromthesky-6U-sSfBV-gM-unsplash.jpg" style="width:100%">
+<div class="text"> </div>
+</div>
+
+<div class="mySlides fade">
+
+<img alt="" src="../../../images/Picture1.jpg" style="width:100%">
+<div class="text"> </div>
+</div>
+
+<div class="mySlides fade">
+ 
+  <img alt="" src="../../../images/Picture2.jpg" style="width:100%">
+  <div class="text"> </div>
+</div>
+
+</div>
+<br>
+
+<div id="dots" style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+</div>
+<div id="left">
+<h1>Our<br>Recycling<br>Solution</h1>
+	</div>	
+<script>
+var slideIndex = 0;
+showSlides();
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 3500); // Change image every 2 seconds
+}
+</script>
+
+		
+
+
+</body>
+</html>
+<!--Images Sources Below
+1.https://unsplash.com/photos/6xeDIZgoPaw
+2. https://unsplash.com/photos/RhVqPKp4va4
+3.https://unsplash.com/photos/6U-sSfBV-gM
+4.https://www.picpng.com/image/pen-png-31906
+-->

@@ -1,0 +1,164 @@
+@charset "UTF-8";
+/* CSS Document */
+
+#right{
+	position: absolute;
+	right: 0px;
+	top: 0%;
+	width: 50%;
+	height: 100%;
+	background-color: white;
+	
+}
+#left{
+	position: absolute;
+	top: 0px;
+	bottom: 0px;
+	left: 0px;
+	background-color: #9FD9D6;
+	width: 50%;
+	height: 100%;
+}
+ul li{
+font-family: 'Raleway', sans-serif;
+font-size: 14px;
+border-radius: 15px;
+border: 2px solid #9FD9D6;
+padding: 8px;
+display: inline-block;
+}
+li{
+	position: relative;
+	float: right;
+	right: 15%;
+	top:25px;
+	
+	width:8vw;
+	text-align: center;
+}
+ul li a{
+	text-decoration: none;
+	color: black;
+	transition: 0.6s ease;
+}
+
+li:hover{
+	background-color: #9FD9D6;
+	border-style:double;
+	border-color:#131212;
+	color: black;
+	cursor: pointer;
+}
+h1 {
+	position: fixed;
+	left:105px;
+	bottom: -5%;
+	font-family: 'Oswald', sans-serif;
+	color: aliceblue;
+	font-size: 20vh;
+	
+	
+}
+h2 {
+	font-family: 'Raleway', sans-serif;
+	color: #9FD9D6;
+	font-size: 4vh;
+	position: fixed;
+	top: 17%;
+	right: 9%;
+	text-align: center;
+}
+p {
+	font-family: "Arial Rounded MT Bold";
+	color: #9FD9D6;
+	font-size: 1.5em;
+	font-weight: 900;
+	position: absolute;
+	top: 250px;
+	left: 150px;
+}
+p2 {
+	font-family: "Arial Rounded MT Bold";
+	color: white;
+	font-size: 1.5em;
+	font-weight: 900;
+	position: absolute;
+	top: 250px;
+	left: 50px;
+}
+
+
+
+.mySlides {display: none;}
+img {vertical-align: middle;
+box-shadow: 0 0 1px 1px black;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  position: fixed;
+  right:8%;
+  bottom:55%;
+  margin: auto;
+  width: 34vw;
+  height: 10vh;
+ 
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 1vh;
+  width: 0.5vw;
+  margin: 0 2px;
+  background-color: #9FD9D6;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+#dots{
+	position:fixed;
+	Bottom: 8%;
+	right: 23%;
+}
+.active {
+  background-color: white;
+	border-style: solid;
+	border-width: 1px;
+	border-color:#9FD9D6;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}

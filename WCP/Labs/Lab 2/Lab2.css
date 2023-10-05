@@ -1,0 +1,120 @@
+@charset "utf-8";
+/* CSS Document */
+/* Initialize */
+
+
+h3 {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 900;
+}
+
+
+:root {
+	--bgColor: #b0aaa8;
+}
+
+body {
+	overflow: hidden;
+	font-family: 'Work Sans', sans-serif;
+	font-weight: 300;
+	background-color: var(--bgColor);
+	color: black;
+}
+
+button {
+	color: var(--bgColor);
+}
+
+
+hr {
+	margin-top: 0.5rem;
+	width: 70px;
+	height: 5px;
+	background-color: #34495e;
+	border: none;
+}
+
+/* Contents */
+
+.contents {
+	margin-top: 1.5rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+#bio {
+	width: 60%;
+	border-bottom: 2px solid #aaa;
+	padding: 1em 2em;
+	color: inherit;
+}
+
+.title {
+	font-size: 2rem;
+	color: #34495e;
+	font-family: "Montserrat", sans-serif;
+	font-weight: 600;
+	align-self: end;
+}
+
+.buttonContainer {
+	width: 60%;
+	max-height: 300px;
+	margin: 0 auto;
+	display: grid;
+	grid-template-rows: repeat(4, 25%);
+	grid-template-columns: 1fr;
+	justify-content: center;
+	align-items: center;
+}
+
+button {
+	color: #111;
+	background-color: transparent;
+	border: 4px solid black;
+	padding: 1em 1em;
+	transition: all ease 0.2s;
+}
+
+button:hover {
+	color: var(--bgColor);
+	background-color: #19114d;
+}
+
+.vanilla,
+.jquery {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-evenly;
+	min-height: 300px;
+}
+.first-box {
+  width:300px; 
+  float:left; 
+  background: #f2e7e3; 
+  height: 150px;
+  margin: 50px
+}
+
+.first-box p {
+  color: #ffffff;
+  padding-left: 80px;
+  padding-top: 50px;
+}
+
+.second-box {
+  width:300px; 
+  height: 150px; 
+  float:right; 
+  background: #a38e84;
+  margin: 50px
+}
+
+.second-box p {
+  color: #ffffff;
+  padding-left: 110px;
+  padding-top: 50px;
+}

@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="Lab32.css">
+<link rel="icon" href="../../../images/mylogo.png" type="image/png" sizes="16x16">
+<title>Lab 32</title>
+</head>
+
+<body>
+<blockquote>
+  <h1>Lab #32</h1>
+  <h1>WebCam</h1>
+</blockquote>
+
+<div>
+<center>
+<div class="photobooth">
+    <div class="controls">
+      <button onClick="takePhoto()">Take Photo</button>
+<div class="rgb">
+        <label for="rmin">Red Min:</label>
+        <input type="range" min=0 max=255 name="rmin">
+        <label for="rmax">Red Max:</label>
+        <input type="range" min=0 max=255 name="rmax">
+        <br>
+        <label for="gmin">Green Min:</label>
+        <input type="range" min=0 max=255 name="gmin">
+        <label for="gmax">Green Max:</label>
+        <input type="range" min=0 max=255 name="gmax">
+        <br>
+        <label for="bmin">Blue Min:</label>
+        <input type="range" min=0 max=255 name="bmin">
+        <label for="bmax">Blue Max:</label>
+        <input type="range" min=0 max=255 name="bmax">
+      </div> 
+    </div>
+
+    <canvas class="photo"></canvas>
+    <video class="player"></video>
+    <div class="strip"></div>
+  </div>
+
+  <audio class="snap" src="https://wesbos.com/demos/photobooth/snap.mp3" hidden></audio>
+</center>
+</div>
+</body>
+<script src="Lab32.js"></script>
+</html>

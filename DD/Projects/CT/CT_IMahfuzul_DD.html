@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CT Project</title>
+    <style>
+		body {
+  font-family: "Lato", sans-serif;
+	background-color: #DEDEDE;
+}
+		
+	div2 {
+    background-color: lightgrey;
+	float: right;
+    width: 300px;
+    border: 7px solid grey;
+    padding: 25px;
+    margin: 5px;
+}
+		div3 {
+    background-color: lightgrey;
+	float: right;
+    width: 800px;
+    border: 7px solid grey;
+    padding: 25px;
+    margin: 5px;
+}
+        #main{
+            width:1500px;
+            float:left;
+        }
+		.main {
+  margin-left: 160px; /* Same as the width of the sidenav */
+  font-size: 28px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+}
+        .pawns{
+            width:30px;
+            height:30px;
+            border-radius:20px;
+            position:absolute;
+        }
+        #board{
+            background:url(../../images/board2.png) no-repeat;
+            background-size:cover;
+            width:550px;
+            height:550px;
+            float:left;
+            margin-top:8px;
+        }
+        #uselesstext1{
+            float:left;
+            padding-left:10px;
+            padding-right:10px;
+        }
+        
+    </style>
+    <script src="createtask.js"></script>
+</head>
+<body>
+    <div2 id="main">
+    <div id="board"></div>
+<!--<button type="button" onclick="stepLeft()">Left</button>
+    <button type="button" onclick="stepRight()">Right</button>
+    <button type="button" onclick="stepUp()">Top</button>
+    <button type="button" onclick="stepDown()">Bottom</button>-->
+<!--    <button type="button"  id="red">Red</button>
+    <button type="button" id="green">Green</button>
+    <button type="button" id="blue">Blue</button>
+    <button type="button"  id="yellow">Yellow</button>-->
+
+    <div id="dice" onclick="randomNum()" style="background-image:url(../../images/giphy2.gif);background-size:contain; width:300px;height:300px; float:right;"></div>
+    <!-- red pawns  start top 28 left 318-->
+    <div class="pawns" id="redpawn1"    onclick="randomMove('red',1)"       style="background-color:red;top:185px;left:478px;"></div>
+    <div class="pawns" id="redpawn2"    onclick="randomMove('red',2)"       style="background-color:red;top:138px;left:431px;"></div>
+    <div class="pawns" id="redpawn3"    onclick="randomMove('red',3)"       style="background-color:red;top:91px;left:478px;"></div>
+    <div class="pawns" id="redpawn4"    onclick="randomMove('red',4)"       style="background-color:red;top:138px;left:526px;"></div>
+
+    <!-- yellow pawns  start top 523 left 218-->
+    <div class="pawns" id="yellowpawn1" onclick="randomMove('yellow',1)"    style="background-color:yellow;top:487px;left:83px;"></div>
+    <div class="pawns" id="yellowpawn2" onclick="randomMove('yellow',2)"    style="background-color:yellow;top:487px;left:176px;"></div>
+    <div class="pawns" id="yellowpawn3" onclick="randomMove('yellow',3)"    style="background-color:yellow;top:440px;left:129px;"></div>
+    <div class="pawns" id="yellowpawn4" onclick="randomMove('yellow',4)"    style="background-color:yellow;top:534px;left:129px;"></div>
+
+    <!-- green pawns  start top 227 left 22-->
+    <div class="pawns" id="greenpawn1"  onclick="randomMove('green',1)"     style="background-color:green;top:185px;left:129px;"></div>
+    <div class="pawns" id="greenpawn2"  onclick="randomMove('green',2)"     style="background-color:green;top:138px;left:176px;"></div>
+    <div class="pawns" id="greenpawn3"  onclick="randomMove('green',3)"     style="background-color:green;top:91px;left:129px;"></div>
+    <div class="pawns" id="greenpawn4"  onclick="randomMove('green',4)"     style="background-color:green;top:138px;left:83px;"></div>
+
+    <!-- blue pawns  start top 326 left 515-->
+    <div class="pawns" id="bluepawn1"   onclick="randomMove('blue',1)"      style="background-color:blue;top:487px;left:526px;"></div>
+    <div class="pawns" id="bluepawn2"   onclick="randomMove('blue',2)"      style="background-color:blue;top:487px;left:431px;"></div>
+    <div class="pawns" id="bluepawn3"   onclick="randomMove('blue',3)"      style="background-color:blue;top:440px;left:478px;"></div>
+    <div class="pawns" id="bluepawn4"   onclick="randomMove('blue',4)"      style="background-color:blue;top:534px;left:478px;"></div>
+
+
+    <h1 id="uselesstext1">It`s </h1>
+		<h1 id="player" style="float:left; color:red";>red</h1>
+		<h1 id="uselesstext2">s turn</h1>
+		
+    <p id="badtext" style="float:left;"></p>
+    </div2>
+	<div3>
+	<h4>Instructions/Rules</h4>
+	<p>Players take turns in a clockwise order; highest throw of the die starts.</p>
+	<p>Each throw, the player decides which piece to move. A piece simply moves in a clockwise direction around the track given by the number thrown. If no piece can legally move according to the number thrown, play passes to the next player.</p>
+	<p>A throw of 6 gives another turn.</p>
+	<p>A player must throw a 6 to move a piece from the starting circle onto the first square on the track. The piece moves 6 squares around the circuit beginning with the appropriately coloured start square (and the player then has another turn).</p>
+	<p>If a piece lands on a piece of a different colour, the piece jumped upon is returned to its starting circle.</p>
+	<h4>Winning Rule</h4>
+	<p>When a piece has circumnavigated the board, it proceeds up the home column. A piece can only be moved onto the home triangle by an exact throw.</p>
+
+	<p>The first person to move all 4 pieces into the home triangle wins.</p>
+	</div3>
+</body>
+</html>

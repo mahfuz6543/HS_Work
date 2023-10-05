@@ -1,0 +1,122 @@
+@charset "UTF-8";
+/* CSS Document */
+h1 {
+	font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif";
+	font-size: 5em;
+	font-weight: bold;
+	text-shadow: 3px 3px 5px #333;
+	text-decoration: none;
+	color: #FF5E49;
+}
+div {
+  background-color: lightgrey;
+  border: 15px solid #B3FFD2;
+  padding: 50px;
+  margin: 20px;
+}
+div2 {
+  background-color: lightgrey;
+  border: 15px solid #B3FFD2;
+  padding: 50px;
+  margin: 20px;
+}
+.button {
+  background-color: ; 
+  border: none;
+  color: black;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  -webkit-transition-duration: 0.4s; 
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+#button1 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #FFA17A;
+}
+
+#button1:hover {
+  background-color: #FFA17A;
+  color: white;
+}
+
+#button2 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #E8D46F;
+}
+
+#button2:hover {
+  background-color: #E8D46F;
+  color: white;
+}
+
+.button3 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #89FF87;
+}
+
+.button3:hover {
+  background-color: #89FF87;
+  color: white;
+}
+.button4 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #6FCBE8;
+}
+
+.button4:hover {
+  background-color: #6FCBE8;
+  color: white;
+}
+.button5 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #AC6EFF;
+}
+
+.button5:hover {
+  background-color: #AC6EFF;
+  color: white;
+}
+.button6 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #FFA17A;
+}
+
+.button6:hover {
+  background-color: #FFA17A;
+  color: white;
+}
+
+
+#shape-display{
+		width: 70%;
+		height: 250px;
+		background-color: gainsboro;
+		padding: 2%;
+		margin: 3%;
+	}
+	
+	#shape{
+		width: 70px;
+		height: 70px;
+		background-color: firebrick;
+		position: absolute;
+		border: solid 5px black;
+		border-radius: 0;
+	}
+	#shape-changer{
+		
+	}
+	#size-changer{
+		
+	}

@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" href="../images/mylogo.png" type="image/png" sizes="16x16">   
+	<link href= "main.css" type="text/css" rel="stylesheet">
+	<title>Visual Design</title>
+	
+</head>
+<body>
+	
+<div class="sidenav">
+  <img src="../images/mylogo.png"alt="logo" width"180px" height="180px"><br><br><br><br><br><br>
+	<center>
+  <a href="../index.html"><i class="con"></i> Home</a>
+  <a href=""><i class="con"></i> VD</a>
+  <a href="../DD/DDindex.html"><i class="con"></i> DD</a>
+  <a href="../WCP/WCPindex.html"><i class="con"></i> WCP</a>
+  <a href=""><i class="con"></i> Directory</a>
+	</center>
+
+</div>
+
+
+<div class="main">
+
+<h1>Visual Design 2017-18</h1>
+<hr>
+
+<h2>PORTFOLIO</h2>
+
+<div id="myBtnContainer">
+  <button class="btn active" onclick="filterSelection('all')"> View all</button>
+  <button class="btn" onclick="filterSelection('labs')"> Labs</button>
+  <button class="btn" onclick="filterSelection('projects')"> Projects</button>
+</div>
+
+<div class="row">
+  
+   <div class="column labs">
+    <div class="content" onclick="openModal('Labs/Lab1.jpg', 'Image 1')">
+    <a href=""><img src="Labs/Lab1.jpg" alt="Lab 1" style="width:100%">
+      <h4>Lab 1</h4>
+    </div>
+  </div>
+  <div class="column labs">
+    <div class="content">
+   <a href=""><img src="Labs/Lab2.jpg" alt="Lab 2" style="width:100%">
+      <h4>Lab 2</h4>
+    </div>
+  </div>
+  <div class="column labs">
+    <div class="content">
+      <a href=""><img src="Labs/Lab6.jpg" alt="Lab 6" style="width:100%">
+      <h4>Lab 6</h4>
+    </div>
+  </div>
+  <div class="column labs">
+    <div class="content">
+      <a href=""><img src="Labs/Lab7.jpg" alt="Lab 7" style="width:100%">
+      <h4>Lab 7</h4>
+    </div>
+  </div>
+  <div class="column labs">
+    <div class="content">
+      <a href=""><img src="Labs/Lab8.jpg" alt="Lab 8" style="width:100%">
+      <h4>Lab 8</h4>
+    </div>
+  </div>
+  <div class="column labs">
+    <div class="content">
+      <a href=""><img src="Labs/Lab9.jpg" alt="Lab 9" style="width:100%">
+      <h4>Lab 9</h4>
+    </div>
+  </div> 
+  <div class="column labs">
+    <div class="content">
+      <a href=""><img src="Labs/Lab12.jpg" alt="Lab 12" style="width:100%">
+      <h4>Lab 12</h4>
+    </div>
+  </div>
+  <div class="column labs">
+    <div class="content">
+      <a href=""><img src="Labs/Lab13.jpg" alt="Lab 13" style="width:100%">
+      <h4>Lab 13</h4>
+    </div>
+  </div>
+  <div class="column labs">
+    <div class="content">
+      <a href=""><img src="Labs/Lab14.jpg" alt="Lab 14" style="width:100%">
+      <h4>Lab 14</h4>
+    </div>
+  </div>
+  <div class="column labs">
+    <div class="content">
+      <a href=""><img src="Labs/Lab15.jpg" alt="Lab 15" style="width:100%">
+      <h4>Lab 15</h4>
+    </div>
+  </div>
+  <div class="column labs">
+    <div class="content">
+      <a href=""><img src="Labs/Lab16_a.png" alt="Lab 16" style="width:100%">
+      <h4>Lab 16</h4>
+    </div>
+  </div>
+  <div class="column projects">
+    <div class="content">
+    <a href=""><img src="Projects/PR1.jpg" alt="Project 1" style="width:100%" "height:50%">
+		<h4>Project 1</h4>
+    </div>
+  </div>
+  <div class="column projects">
+    <div class="content">
+    <a href=""><img src="Projects/PR2_a.jpg" alt="Project 2" style="width:100%">
+      <h4>Project 2</h4>
+    </div>
+  </div>
+  <div class="column projects">
+    <div class="content">
+    <a href=""><img src="Projects/PR3_a.png" alt="Project 3" style="width:100%">
+      <h4>Project 3</h4>
+    </div>
+  </div>
+  <div class="column projects">
+    <div class="content">
+    <a href=""><img src="Projects/PR4_a.png" alt="Project 4" style="width:100%">
+      <h4>Project 4</h4>
+    </div>
+  </div>
+  <div class="column projects">
+    <div class="content">
+    <a href=""><img src="Projects/PR5.jpg" alt="Project 5" style="width:100%">
+      <h4>Project 5</h4>
+    </div>
+  </div>
+  <div class="column projects">
+    <div class="content">
+    <a href=""><img src="Projects/PR6.png" alt="Project 6" style="width:100%">
+      <h4>Project 6</h4>
+    </div>
+  </div>
+
+  <div id="modal" class="modal">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <img id="modal-image" src="" alt="Popup Image">
+  </div>
+</div>
+</div>
+	
+</body>
+		<script>
+	
+filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("column");
+  if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+  }
+}
+
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);     
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+function openModal(imageSrc) {
+    const modal = document.getElementById('modal');
+    const modalImage = document.getElementById('modal-image');
+  
+    modalImage.src = imageSrc;
+    modal.style.display = 'block';
+  }
+  
+  function closeModal() {
+    const modal = document.getElementById('modal');
+    modal.style.display = 'none';
+  }
+  
+
+	</script>
+</html>
